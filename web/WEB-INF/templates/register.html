@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<h1>用户注册</h1>
+<form action="http://localhost:8080/lib/signin/" method="post" id="register"  onsubmit="return validate_form()">
+  <p>用户名: <input type="text" name="username"></p>
+  <p>密码: <input type="password" name="password"></p>
+  <p>确认密码: <input type="password" name="confirm_password"></p>
+  <p><input type="submit" value="注册"></p>
+</form>
+<p>已有账号？</p>
+<form action="http://localhost:63342/demo2/templates/login.html" method="post">
+  <p><input type="submit" value="登录" ></p>
+</form>
+</body>
+<script>
+  function validate_form() {
+    var password = document.getElementsByName("password")[0].value;
+    var confirm_password = document.getElementsByName("confirm_password")[0].value;
+    if (password != confirm_password) {
+      alert("确认密码不正确，请重新输入");
+      document.getElementsByName("password")[0].value = "";
+      document.getElementsByName("confirm_password")[0].value = "";
+      return false;
+    }else{
+      return true;
+    }
+  }
+</script>
+<style>
+  body {
+    font-family: "楷体", serif;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  input[type="text"], input[type="password"] {
+    width: 300px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  input[type="submit"] {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077c9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"] {
+    margin: 0 10px;
+  }
+</style>
+</html>

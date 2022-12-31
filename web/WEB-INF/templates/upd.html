@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>修改图书界面</title>
+</head>
+<body>
+<h1>修改图书</h1>
+<form action="/lib/list/upd/" method="post">
+    <h2>请填入你要修改的相关信息:</h2><br>
+    <label for="bookname">书名:</label><br>
+    <input type="text" id="bookname" name="bookname"><br>
+
+    <label for="author">作者:</label><br>
+    <input type="text" id="author" name="author"><br>
+
+    <label for="publish">出版社:</label><br>
+    <input type="text" id="publish" name="publish"><br>
+
+    <label for="picture">照片路径:</label><br>
+    <input type="text" id="picture" name="picture"><br>
+
+    <label for="date">出版日期:</label><br>
+    <input type="date" id="date" name="date"><br>
+
+    <label for="amount">数量:</label><br>
+    <input type="text" id="amount" name="amount"><br>
+
+    <input type="submit" value="提交">
+</form>
+<style>
+  form {
+    font-family: "楷体", serif;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],input[type="date"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+</style>
+</body>
+</html>

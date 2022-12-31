@@ -20,7 +20,11 @@
       margin-top: 20px;
       text-align: center;
     }
-    .book-title {
+    .book-id {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .book-bookname {
       font-size: 18px;
       font-weight: bold;
     }
@@ -28,9 +32,27 @@
       font-size: 16px;
       color: gray;
     }
+    .book-publish {
+      font-size: 18px;
+      color: gray;
+    }
     .book-date {
       font-size: 14px;
       color: gray;
+    }
+    .book-amount {
+      font-size: 14px;
+      color: gray;
+    }
+    input[type="submit"] {
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077c9;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -40,11 +62,12 @@
   <div class="book">
     <img class="book-image" src="{{ book.picture}}" alt="{{ book.bookname }}">
     <div class="book-info">
-      <div class="book-title">{{ book.bookname }}</div>
+      <div class="book-id">{{ book.id }}</div>
+      <div class="book-bookname">{{ book.bookname }}</div>
       <div class="book-author">{{ book.author }}</div>
-      <div class="book-date">{{ book.publish }}</div>
+      <div class="book-publish">{{ book.publish }}</div>
       <div class="book-date">{{ book.date }}</div>
-      <div class="book-date">{{ book.amount}}</div>
+      <div class="book-amount">{{ book.amount}}</div>
     </div>
   </div>
   {% endfor %}
@@ -57,5 +80,8 @@
   <button onclick="window.location.href='/lib/list/upd'" class="edit-button">删除图书</button>
   {% endif %}
 </div>
+<form action="/lib/logout/" method="post">
+  <p><input type="submit" value="退出"></p>
+</form>
 </body>
 </html>
