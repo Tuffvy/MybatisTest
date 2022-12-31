@@ -6,15 +6,12 @@
 </head>
 <body>
 <h1>删除图书</h1>
-<form action="/lib/adlist/del/" method="post"><br>
-  <form action="/lib/adlist/del/" method="post">
+<form action="/lib/list/del/" method="post"><br>
     <h2>请输入你想删除的图书的id</h2>
-    <label for="amount">id:</label><br>
-    <input type="number" id="amount" name="amount"><br>
+    <label for="bookid">id:</label><br>
+    <input type="number" id="bookid" name="bookid"><br>
 
     <input type="submit" value="提交">
-  </form>
-
 </form>
 <style>
   form {
@@ -39,7 +36,7 @@
 
   input[type="number"] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 20px 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;

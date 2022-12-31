@@ -1,13 +1,16 @@
 package com.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.ui.Model;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 import com.tjise.entity.User;
+import com.tjise.entity.Book;
 import com.tjise.mapper.UserMapper;
+import com.tjise.mapper.BookMapper;
 import com.tjise.util.MyBatisUtil;
 import org.apache.ibatis.session.SqlSession;
 
@@ -36,6 +39,22 @@ public class TestController {
         session.commit();
 
         return "getpost";
+    }
+
+    @RequestMapping(value = "/getadd", method = POST)
+    public String Add(@RequestParam("bookname") String bookname,
+                      @RequestParam("author") String author,
+                      @RequestParam("publish") String publish,
+                      @RequestParam("date") String date, @RequestParam("amount") int amount,
+                      @RequestParam("picture") String picture)
+    {
+        SqlSession sqlsession=MyBatisUtil.openSession();
+        BookMapper bookMapper=sqlsession.getMapper(BookMapper.class);
+        Book new_book = new Book(bookname,author,publish,date,amount,picture);
+
+        bookMapper.insertBook(new_book);
+        sqlsession.commit();
+        return "redirect:getpost";
     }
 
 }

@@ -9,33 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="co-start">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tjise/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tjise/mapper/BookMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tjise/mapper/BookMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/pictures/index.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/217939da-81a0-4c32-8b79-3382d80c6754.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/217939da-81a0-4c32-8b79-3382d80c6754.xml" afterDir="false" />
+    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="co-start 12.31">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/Hello.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/SpringMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/HOME_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/HOME_Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/getpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/getpost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/BookMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/del.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/del.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/dictory.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/upd.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/upd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tjise/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tjise/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/tjise/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tjise/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringMVC.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tjise/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tjise/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tjise/test/CRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tjise/test/CRUDTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/tjise/test/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tjise/test/MapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/getpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/getpost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/index.html" afterDir="false" />
     </list>
     <list id="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" name="Changes by 83808" comment="">
@@ -49,6 +35,7 @@
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/register.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/seek.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/upd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +54,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/web/WEB-INF/templates/directory.html">
+      <ranges>
+        <range start1="22" end1="23" start2="22" end2="27" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="30" end1="30" start2="34" end2="38" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="34" end1="34" start2="42" end2="56" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="42" end1="43" start2="64" end2="66" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="44" end1="45" start2="67" end2="68" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="46" end1="47" start2="69" end2="70" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="52" end1="53" start2="75" end2="76" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
+        <range start1="59" end1="59" start2="82" end2="85" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+      </ranges>
+    </file>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -121,7 +122,7 @@
       <recent name="D:\IntelliJ IDEA 2022.2.3\ideaProjects\MybatisTest\web\WEB-INF\pictures" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MapperTest.testUpdateBook">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.68">
     <configuration name="MapperTest.testDeleteBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MybatisTest" />
       <extension name="coverage">
@@ -302,10 +303,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapperTest.testInsertBook" />
         <item itemvalue="JUnit.MapperTest.testUpdateBook" />
         <item itemvalue="JUnit.MapperTest.testUpdate" />
         <item itemvalue="JUnit.MapperTest.testDeleteBook" />
-        <item itemvalue="JUnit.MapperTest.testInsertBook" />
         <item itemvalue="JUnit.MapperTest.testInsertUser" />
       </list>
     </recent_temporary>
@@ -319,7 +320,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672387048760</updated>
       <workItem from="1672387051008" duration="30761000" />
-      <workItem from="1672473035200" duration="21839000" />
+      <workItem from="1672473035200" duration="27287000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1672391736006</created>
@@ -335,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672475084416</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="co-start 12.31">
+      <created>1672499498762</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672499498762</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -383,6 +391,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
     <MESSAGE value="co-start" />
-    <option name="LAST_COMMIT_MESSAGE" value="co-start" />
+    <MESSAGE value="co-start 12.31" />
+    <option name="LAST_COMMIT_MESSAGE" value="co-start 12.31" />
   </component>
 </project>

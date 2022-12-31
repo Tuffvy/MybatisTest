@@ -5,14 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-<form action="http://localhost:8080/getpost" method="post" enctype="multipart/form-data">
-    <span>name:</span>
-    <input type="text" id="name" name="name"></br>
-    <span>password:</span>
-    <input type="text" id="password" name="password"></br>
-    <span>permission:</span>
-    <input type="number" id="permission" name="permission"></br>
-    <input type="submit" value="submit">
+<form action="/getadd" method="post">
+    <label for="bookname">书名:</label><br>
+    <input type="text" id="bookname" name="bookname"><br>
+
+    <label for="author">作者:</label><br>
+    <input type="text" id="author" name="author"><br>
+
+    <label for="publish">出版社:</label><br>
+    <input type="text" id="publish" name="publish"><br>
+
+    <label for="picture">照片路径:</label><br>
+    <input type="text" id="picture" name="picture"><br>
+
+    <label for="date">出版日期:</label><br>
+    <input type="date" id="date" name="date"><br>
+
+    <label for="amount">数量:</label><br>
+    <input type="text" id="amount" name="amount"><br>
+
+    <input type="submit" value="提交">
 </form>
 </body>
 </html>

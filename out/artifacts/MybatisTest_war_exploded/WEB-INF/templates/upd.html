@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>增加图书界面</title>
+  <title>修改图书界面</title>
 </head>
 <body>
-<h1>增加图书</h1>
-<form action="/lib/adlist/add/" method="post">
-  <form action="/lib/adlist/add/" method="post">
+<h1>修改图书</h1>
+<form action="/lib/list/upd/" method="post">
     <h2>请填入你要修改的相关信息:</h2><br>
     <label for="bookname">书名:</label><br>
     <input type="text" id="bookname" name="bookname"><br>
@@ -19,17 +18,15 @@
     <input type="text" id="publish" name="publish"><br>
 
     <label for="picture">照片路径:</label><br>
-    <input type="text" id="picture" name="photo"><br>
+    <input type="text" id="picture" name="picture"><br>
 
     <label for="date">出版日期:</label><br>
     <input type="date" id="date" name="date"><br>
 
     <label for="amount">数量:</label><br>
-    <input type="number" id="amount" name="amount"><br>
+    <input type="text" id="amount" name="amount"><br>
 
     <input type="submit" value="提交">
-  </form>
-
 </form>
 <style>
   form {
@@ -51,10 +48,10 @@
     margin-bottom: 5px;
   }
 
-  input[type="text"], input[type="number"], input[type="date"] {
+  input[type="text"],input[type="date"] {
     width: 100%;
     padding: 12px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
