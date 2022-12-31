@@ -1,0 +1,61 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>图书界面信息</title>
+  <style>
+    .book-container {
+      display: flex;
+    }
+    .book {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+    }
+    .book-image {
+      width: 100px;
+      height: 150px;
+    }
+    .book-info {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .book-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .book-author {
+      font-size: 16px;
+      color: gray;
+    }
+    .book-date {
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+<div class="book-container">
+  {% for book in books %}
+  <div class="book">
+    <img class="book-image" src="{{ book.picture}}" alt="{{ book.bookname }}">
+    <div class="book-info">
+      <div class="book-title">{{ book.bookname }}</div>
+      <div class="book-author">{{ book.author }}</div>
+      <div class="book-date">{{ book.publish }}</div>
+      <div class="book-date">{{ book.date }}</div>
+      <div class="book-date">{{ book.amount}}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="button-container">
+  <button onclick="window.location.href='/lib/list/add'" class="edit-button">查找图书</button>
+  {% if per == 1 %}
+  <button onclick="window.location.href='/lib/list/add'" class="edit-button">增加图书</button>
+  <button onclick="window.location.href='/lib/list/del/'" class="edit-button">修改图书</button>
+  <button onclick="window.location.href='/lib/list/upd'" class="edit-button">删除图书</button>
+  {% endif %}
+</div>
+</body>
+</html>

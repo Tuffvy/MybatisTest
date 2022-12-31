@@ -20,20 +20,18 @@ public class TestController {
     }
 
     @RequestMapping(value = "/getpost",method = POST)
-    public String getPost(@RequestParam("id")Integer id,
-                          @RequestParam("name")String name,
+    public String getPost(@RequestParam("name")String name,
                           @RequestParam("password")String password,
                           @RequestParam("permission")Integer permission,
                           Model model){
         SqlSession session=MyBatisUtil.openSession();
         UserMapper userMapper=session.getMapper(UserMapper.class);
 
-        model.addAttribute("id",id);
         model.addAttribute("name",name);
         model.addAttribute("password",password);
         model.addAttribute("permission",permission);
 
-        User user = new User(id,name,password,permission);
+        User user = new User(name,password,permission);
         userMapper.insertUser(user);
         session.commit();
 

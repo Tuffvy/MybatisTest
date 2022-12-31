@@ -27,6 +27,7 @@
 
     <mappers>
         <mapper resource="com/tjise/mapper/UserMapper.xml"></mapper>
+        <mapper resource="com/tjise/mapper/BookMapper.xml"></mapper>
     </mappers>
 
 </configuration>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.tjise.mapper.BookMapper">
+
+    <select id="findBookList" resultType="com.tjise.entity.Book">
+        select * from books
+    </select>
+
+    <select id="findBookById" resultType="com.tjise.entity.Book" parameterType="int">
+        select * from books where bookid = #{bookid}
+    </select>
+
+    <select id="findBookByName" resultType="com.tjise.entity.Book" parameterType="string">
+        select * from books where bookname like '%${value}%'
+    </select>
+
+    <select id="findBookByAuthor" resultType="com.tjise.entity.Book" parameterType="string">
+        select * from books where author like '%${value}%'
+    </select>
+
+    <select id="findBookByPublish" resultType="com.tjise.entity.Book" parameterType="string">
+        select * from books where publish like '%${value}%'
+    </select>
+
+    <insert id="insertBook" parameterType="com.tjise.entity.Book" useGeneratedKeys="true" keyProperty="bookid">
+        insert into books values(null, #{bookname}, #{author}, #{publish}, #{date}, #{amount}, #{picture})
+    </insert>
+
+    <update id="updateBook" parameterType="com.tjise.entity.Book">
+        update books set bookname = #{bookname}, author = #{author}, publish = #{publish}, date = #{date}, amount = #{amount}, picture = #{picture}
+        where bookid = #{bookid}
+    </update>
+
+    <delete id="deleteBook" parameterType="int">
+        DELETE FROM books WHERE bookid = #{bookid};
+    </delete>
+
+</mapper>

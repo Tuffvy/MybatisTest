@@ -6,8 +6,8 @@ import java.util.Map;
 
 public interface UserMapper {
     List<User> findUserList();
-    List<User> findUserById(int userid);
-    List<User> findUserByName(String username);
+    User findUserById(int userid);
+    User findUserByName(String username);
     List<User> findUserByPermission(int permission);
     List<User> findUserByPage(Map<String, Object> map);
     int insertUser(User user);

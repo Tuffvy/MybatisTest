@@ -1,0 +1,63 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>图书界面信息</title>
+  <style>
+    .book-container {
+      display: flex;
+    }
+    .book {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 20px;
+    }
+    .book-image {
+      width: 100px;
+      height: 150px;
+    }
+    .book-info {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .book-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .book-author {
+      font-size: 16px;
+      color: gray;
+    }
+    .book-date {
+      font-size: 14px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+{% if per == 1 %}
+<div style="text-align: center; margin-bottom: 20px;">
+  <button onclick="window.location.href='/modify-books'" class="edit-button">图书</button>
+  <button onclick="window.location.href='/modify-books'" class="edit-button">修改图书</button>
+  <button onclick="window.location.href='/modify-books'" class="edit-button">修改图书</button>
+</div>
+{% endif %}
+<div style="text-align: center; margin-bottom: 20px;">
+<button onclick="window.location.href='/modify-books'" class="edit-button">修改图书</button>
+</div>
+<div class="book-container">
+  {% for book in books %}
+  <div class="book">
+    <img class="book-image" src="{{ book.picture}}" alt="{{ book.bookname }}">
+    <div class="book-info">
+      <div class="book-title">{{ book.bookname }}</div>
+      <div class="book-author">{{ book.author }}</div>
+      <div class="book-date">{{ book.publish }}</div>
+      <div class="book-date">{{ book.date }}</div>
+      <div class="book-date">{{ book.amount}}</div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+</body>
+</html>

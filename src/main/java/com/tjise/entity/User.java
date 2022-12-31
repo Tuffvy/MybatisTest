@@ -33,8 +33,7 @@ public class User {
         this.permission = permission;
     }
 
-    public User(int userid, String username, String password, int permission){
-        this.userid = userid;
+    public User(String username, String password, int permission){
         this.username = username;
         this.password = password;
         this.permission = permission;

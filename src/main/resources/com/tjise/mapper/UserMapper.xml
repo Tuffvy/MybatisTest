@@ -33,8 +33,8 @@
     </select>
 
     <!-- insert 插入数据 只有parameterType输入参数 -->
-    <insert id="insertUser" parameterType="com.tjise.entity.User">
-        insert into users values(#{userid}, #{username}, #{password}, #{permission})
+    <insert id="insertUser" parameterType="com.tjise.entity.User" useGeneratedKeys="true" keyProperty="userid">
+        insert into users values(null, #{username}, #{password}, #{permission})
     </insert>
 
     <!-- update 同样只有输入参数parameterType-->

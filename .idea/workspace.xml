@@ -9,31 +9,46 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/MybatisTest_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tjise/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/tjise/util/MyBatisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/SpringMVC.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tjise/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tjise/test/CRUDTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/tjise/test/MapperTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/getpost.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="co-start">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tjise/entity/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tjise/mapper/BookMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/tjise/mapper/BookMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/pictures/index.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/217939da-81a0-4c32-8b79-3382d80c6754.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/217939da-81a0-4c32-8b79-3382d80c6754.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/Hello.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/SpringMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/TestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/getpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/getpost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/TestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/tjise/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tjise/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tjise/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tjise/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/SpringMVC.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/SpringMVC.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/tjise/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/tjise/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tjise/test/CRUDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tjise/test/CRUDTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tjise/test/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tjise/test/MapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/getpost.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/getpost.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/index.html" afterDir="false" />
     </list>
     <list id="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" name="Changes by 83808" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" afterDir="false" />
     </list>
     <list id="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" name="Changes by junwei" comment="">
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/del.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory1.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/seek.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/upd.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +58,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="spring-beans.schema" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -83,6 +98,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "D:/IntelliJ IDEA 2022.2.3/ideaProjects/MybatisTest/web/WEB-INF/pictures",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -100,15 +116,13 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.MapperTest.findUserByPermissionTest">
-    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Hello" />
-      <module name="MybatisTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapperTest.findUserByPermissionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2022.2.3\ideaProjects\MybatisTest\web\WEB-INF\pictures" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MapperTest.testUpdateBook">
+    <configuration name="MapperTest.testDeleteBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MybatisTest" />
       <extension name="coverage">
         <pattern>
@@ -118,13 +132,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tjise.test" />
       <option name="MAIN_CLASS_NAME" value="com.tjise.test.MapperTest" />
-      <option name="METHOD_NAME" value="findUserByPermissionTest" />
+      <option name="METHOD_NAME" value="testDeleteBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperTest.findUserList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapperTest.testInsertBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MybatisTest" />
       <extension name="coverage">
         <pattern>
@@ -134,13 +148,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tjise.test" />
       <option name="MAIN_CLASS_NAME" value="com.tjise.test.MapperTest" />
-      <option name="METHOD_NAME" value="findUserList" />
+      <option name="METHOD_NAME" value="testInsertBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapperTest.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MybatisTest" />
       <extension name="coverage">
         <pattern>
@@ -150,13 +164,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tjise.test" />
       <option name="MAIN_CLASS_NAME" value="com.tjise.test.MapperTest" />
-      <option name="METHOD_NAME" value="testDeleteUser" />
+      <option name="METHOD_NAME" value="testInsertUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperTest.testUpdateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapperTest.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MybatisTest" />
       <extension name="coverage">
         <pattern>
@@ -166,7 +180,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tjise.test" />
       <option name="MAIN_CLASS_NAME" value="com.tjise.test.MapperTest" />
-      <option name="METHOD_NAME" value="testUpdateUser" />
+      <option name="METHOD_NAME" value="testUpdate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapperTest.testUpdateBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MybatisTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tjise.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tjise.test" />
+      <option name="MAIN_CLASS_NAME" value="com.tjise.test.MapperTest" />
+      <option name="METHOD_NAME" value="testUpdateBook" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -263,20 +293,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Hello" />
-      <item itemvalue="JUnit.MapperTest.findUserByPermissionTest" />
-      <item itemvalue="JUnit.MapperTest.findUserList" />
-      <item itemvalue="JUnit.MapperTest.testDeleteUser" />
-      <item itemvalue="JUnit.MapperTest.testUpdateUser" />
+      <item itemvalue="JUnit.MapperTest.testDeleteBook" />
+      <item itemvalue="JUnit.MapperTest.testInsertBook" />
+      <item itemvalue="JUnit.MapperTest.testUpdate" />
+      <item itemvalue="JUnit.MapperTest.testUpdateBook" />
+      <item itemvalue="JUnit.MapperTest.testInsertUser" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.68" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MapperTest.findUserByPermissionTest" />
-        <item itemvalue="Application.Hello" />
-        <item itemvalue="JUnit.MapperTest.testDeleteUser" />
-        <item itemvalue="JUnit.MapperTest.testUpdateUser" />
-        <item itemvalue="JUnit.MapperTest.findUserList" />
+        <item itemvalue="JUnit.MapperTest.testUpdateBook" />
+        <item itemvalue="JUnit.MapperTest.testUpdate" />
+        <item itemvalue="JUnit.MapperTest.testDeleteBook" />
+        <item itemvalue="JUnit.MapperTest.testInsertBook" />
+        <item itemvalue="JUnit.MapperTest.testInsertUser" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +319,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672387048760</updated>
       <workItem from="1672387051008" duration="30761000" />
-      <workItem from="1672473035200" duration="1957000" />
+      <workItem from="1672473035200" duration="21839000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1672391736006</created>
@@ -298,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672391736006</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="co-start">
+      <created>1672475084416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672475084416</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +382,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="co-start" />
+    <option name="LAST_COMMIT_MESSAGE" value="co-start" />
   </component>
 </project>

@@ -61,7 +61,7 @@ public class CRUDTest {
     @Test
     public void testInsertUser(){
         try {
-            User user = new User(7, "user7", "123456", 10);
+            User user = new User("user7", "123456", 10);
             int rows = session.insert("com.tjise.mapper.UserMapper.insertUser", user);
             System.out.println(rows);
             session.commit();
