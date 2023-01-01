@@ -1,26 +1,23 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>查询图书界面信息</title>
+  <title>图书界面信息</title>
   <style>
     .book-container {
-      display: flex;
-    }
-    .book {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-right: 20px;
+      margin:5px;
+      border:1px solid #ccc;
+      float: left;
+      width: 200px;
     }
     .book-image {
-      width: 100px;
-      height: 150px;
+      width:100%;
+      height:50%;
     }
     .book-info {
-      margin-top: 20px;
+      padding: 15px;
       text-align: center;
     }
-    .book-title {
+    .book-bookname {
       font-size: 18px;
       font-weight: bold;
     }
@@ -28,40 +25,47 @@
       font-size: 16px;
       color: gray;
     }
+    .book-publish {
+      font-size: 18px;
+      color: gray;
+    }
     .book-date {
       font-size: 14px;
       color: gray;
     }
+    .book-amount {
+      font-size: 14px;
+      color: gray;
+    }
     input[type="submit"] {
-      width: 50px;
-      height: 20px;
+      width: 100px;
+      height: 40px;
       border: none;
       border-radius: 5px;
       background-color: #0077c9;
       color: #fff;
-      font-size: 10px;
+      font-size: 16px;
       cursor: pointer;
     }
   </style>
 </head>
 <body>
+<h1>Book List</h1>
 <form action="/lib/list/" method="post">
   <p><input type="submit" value="返回"></p>
 </form>
-
-<div class="book-container">
-  {% for book in books %}
-  <div class="book">
-    <img class="book-image" src="{{ book.picture}}" alt="{{ book.bookname }}">
+<div th:each="book : ${books}">
+  <div class="book-container">
+    <img class="book-image" th:src="${book.picture}" alt="Book Image">
     <div class="book-info">
-      <div class="book-title">{{ book.bookname }}</div>
-      <div class="book-author">{{ book.author }}</div>
-      <div class="book-date">{{ book.publish }}</div>
-      <div class="book-date">{{ book.date }}</div>
-      <div class="book-date">{{ book.amount}}</div>
+      <p class="book-id" th:text="${book.bookid}"></p>
+      <p class="book-bookname" th:text="${book.bookname}"></p>
+      <p class="book-author" th:text="${book.author}"></p>
+      <p class="book-date" th:text="${book.date}"></p>
+      <p class="book-publish" th:text="${book.publish}"></p>
+      <p class="book-amount" th:text="${book.amount}"></p>
     </div>
   </div>
-  {% endfor %}
 </div>
 </body>
 </html>
