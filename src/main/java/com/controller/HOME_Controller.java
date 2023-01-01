@@ -34,7 +34,7 @@ public class HOME_Controller {
     UserMapper userMapper = sqlsession.getMapper(UserMapper.class);
     BookMapper bookMapper = sqlsession.getMapper(BookMapper.class);
 
-    @RequestMapping(value = "/lib" , method = POST)
+    @RequestMapping(value = "/lib")
     public String login(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
         if (session.getAttribute("UserName") == null)
@@ -58,38 +58,36 @@ public class HOME_Controller {
                 session.setAttribute("per", per);
                 return "redirect:/lib/list";
             } else
-                return "redirect:/lib/login";
+                return "redirect:/lib";
         }
         else //用户不存在
         {
             /*提示用户不存在*/
-            return "redirect:/lib/login";
+            return "redirect:/lib";
         }
 
     }
 
-    @RequestMapping(value = "/lib/signin", method = POST)
-    public String SignIn(@RequestParam("Username") String username,
-                         @RequestParam("Password") String in_password, Model model,
+    @RequestMapping("/lib/getsign")
+    public String getSign(){return "register";}
+    @RequestMapping(value = "/lib/signin",method = POST)
+    public String SignIn(@RequestParam("username") String username,
+                         @RequestParam("password") String password, Model model,
                         HttpServletResponse response) throws ServletException, IOException
     {
         User user = userMapper.findUserByName(username);
-        String cur_name = user.getUserName();
-        if(cur_name.equals(username))
+        if(user != null)
             model.addAttribute("msg","用户名已存在！");
         else
         {
-            User new_user = new User();
-            new_user.setUserName(username);
-            new_user.setPassword(in_password);
-            new_user.setPermission(0);
+            User new_user = new User(username, password, 0);
             userMapper.insertUser(new_user);
             sqlsession.commit();
         }
-        return "redirect:/lib/login";
+        return "redirect:/lib";
     }
 
-    @RequestMapping(value = "/lib/list", method = POST)
+    @RequestMapping(value = "/lib/list")
     public String ad_directory(Model model, HttpServletRequest request)
     {
         HttpSession session = request.getSession();
@@ -99,6 +97,11 @@ public class HOME_Controller {
         if(per == 1) model.addAttribute("per", 1);
         else model.addAttribute("per", 0);
         return "directory";
+    }
+
+    @RequestMapping("/lib/list/getadd")
+    public String getAdd(){
+        return "add";
     }
 
     @RequestMapping(value = "/lib/list/add", method = POST)
@@ -120,6 +123,8 @@ public class HOME_Controller {
         return "redirect:/lib/list";
     }
 
+    @RequestMapping("/lib/list/getdel")
+    public String getDel(){return "del";}
     @RequestMapping(value = "/lib/list/del", method = POST)
     public String del(@RequestParam("bookid") int id)
     {
@@ -128,6 +133,8 @@ public class HOME_Controller {
         return "redirect:/lib/list/";
     }
 
+    @RequestMapping("/lib/list/getupd")
+    public String getUpd(){return "upd";}
     @RequestMapping(value = "/lib/list/upd", method = POST)
     public String update(@RequestParam("id") int id,
                          @RequestParam("bookname") String name,
@@ -148,8 +155,10 @@ public class HOME_Controller {
         return "redirect:/lib/list";
     }
 
-    @RequestMapping(value = "/lib/seek", method = POST)
-    public String Seek_byId(HttpServletRequest request, @RequestParam("bookname") String name, Model model)
+    @RequestMapping("/lib/list/getseek")
+    public String getSeek(){return "seek";}
+    @RequestMapping(value = "/lib/list/seek", method = POST)
+    public String Seek_byName(HttpServletRequest request, @RequestParam("bookname") String name, Model model)
     {
         List<Book> cur_book = bookMapper.findBookByName(name);
         model.addAttribute("books", cur_book);
@@ -162,7 +171,7 @@ public class HOME_Controller {
         request.getSession().removeAttribute("UserName");
         request.getSession().removeAttribute("per");
         /* 删除session中的内容 */
-        return "redirect:/lib/login";
+        return "redirect:/lib";
     }
 
 

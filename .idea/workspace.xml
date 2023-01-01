@@ -9,33 +9,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="co-start 12.31">
+    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="co-start 1.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/Hello.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/Hello.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/HOME_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/HOME_Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/BookMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/BookMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/del.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/del.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/dictory.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/BookMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/BookMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/tjise/mapper/UserMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/upd.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/upd.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/register.html" afterDir="false" />
     </list>
-    <list id="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" name="Changes by 83808" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" afterDir="false" />
-    </list>
-    <list id="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" name="Changes by junwei" comment="">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/del.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/seek.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/upd.html" afterDir="false" />
+    <list id="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" name="Changes by 83808" comment="Changes by 83808" />
+    <list id="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" name="Changes by junwei" comment="Changes by junwei">
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,28 +42,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/web/WEB-INF/templates/directory.html">
-      <ranges>
-        <range start1="22" end1="23" start2="22" end2="27" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-        <range start1="30" end1="30" start2="34" end2="38" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-        <range start1="34" end1="34" start2="42" end2="56" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-        <range start1="42" end1="43" start2="64" end2="66" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-        <range start1="44" end1="45" start2="67" end2="68" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-        <range start1="46" end1="47" start2="69" end2="70" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-        <range start1="52" end1="53" start2="75" end2="76" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
-        <range start1="59" end1="59" start2="82" end2="85" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-      </ranges>
-    </file>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -99,7 +81,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "D:/IntelliJ IDEA 2022.2.3/ideaProjects/MybatisTest/web/WEB-INF/pictures",
+    "last_opened_file_path": "D:/IntelliJ IDEA 2022.2.3/ideaProjects/MybatisTest/web/WEB-INF/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -119,6 +101,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2022.2.3\ideaProjects\MybatisTest\web\WEB-INF\templates" />
       <recent name="D:\IntelliJ IDEA 2022.2.3\ideaProjects\MybatisTest\web\WEB-INF\pictures" />
     </key>
   </component>
@@ -320,7 +303,9 @@
       <option name="presentableId" value="Default" />
       <updated>1672387048760</updated>
       <workItem from="1672387051008" duration="30761000" />
-      <workItem from="1672473035200" duration="27287000" />
+      <workItem from="1672473035200" duration="27832000" />
+      <workItem from="1672505325515" duration="420000" />
+      <workItem from="1672551986395" duration="11260000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1672391736006</created>
@@ -343,7 +328,28 @@
       <option name="project" value="LOCAL" />
       <updated>1672499498762</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changes by junwei">
+      <created>1672504853085</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672504853085</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Changes by 83808">
+      <created>1672504862666</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672504862666</updated>
+    </task>
+    <task id="LOCAL-00006" summary="co-start 1.1">
+      <created>1672504872762</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672504872762</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +398,9 @@
     <MESSAGE value="start" />
     <MESSAGE value="co-start" />
     <MESSAGE value="co-start 12.31" />
-    <option name="LAST_COMMIT_MESSAGE" value="co-start 12.31" />
+    <MESSAGE value="Changes by junwei" />
+    <MESSAGE value="Changes by 83808" />
+    <MESSAGE value="co-start 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="co-start 1.1" />
   </component>
 </project>
