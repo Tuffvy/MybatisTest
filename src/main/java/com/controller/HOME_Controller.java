@@ -1,13 +1,9 @@
 package com.controller;
 
 import com.tjise.mapper.BookMapper;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.ImportResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -25,7 +21,6 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
-import static org.springframework.web.bind.annotation.RequestMethod.OPTIONS;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
@@ -174,5 +169,56 @@ public class HOME_Controller {
         return "redirect:/lib";
     }
 
+    @RequestMapping(value = "/lib/list/usermsg", method = POST)
+    public String User_msg(HttpServletRequest request, Model model)
+    {
+        HttpSession session = request.getSession();
+        String username = (String) session.getAttribute("UserName");
+        User user = userMapper.findUserByName(username);
+        model.addAttribute("user", user);
+        return "usermsg";
+    }
+
+    @RequestMapping(value = "/lib/list/usermsg/return", method = POST)
+    public String Return(){return "redirect:/lib/list";}
+
+    @RequestMapping(value = "/lib/list/usermsg/get_repswd", method = POST)
+    public String getps(){return "repswd";}
+
+    @RequestMapping(value = "/lib/list/usermsg/repswd", method = POST)
+    public String RePassword(HttpServletRequest request, Model model,
+                             @RequestParam("new_password") String new_ps,
+                            @RequestParam("old_password") String old_ps)
+
+    {
+        HttpSession session = request.getSession();
+        String name = (String) session.getAttribute("UserName");
+        User user = userMapper.findUserByName(name);
+        String password = user.getPassword();
+        if(password.equals(old_ps))
+        {
+            user.setPassword(new_ps);
+            userMapper.updateUser(user);
+            sqlsession.commit();
+            return "redirect:/lib/logout";
+        }
+        else
+        {
+            model.addAttribute("msg","old password is wrong..");
+            return "repswd";
+        }
+    }
+
+    @RequestMapping(value = "/lib/list/usermsg/logoff", method = POST)
+    public String Logoff(HttpServletRequest request)
+    {
+        HttpSession session = request.getSession();
+        String username = (String) session.getAttribute("UserName");
+        User user = userMapper.findUserByName(username);
+        int id = user.getUserId();
+        userMapper.deleteUser(id);
+        sqlsession.commit();
+        return "redirect:/lib/logout";
+    }
 
 }
