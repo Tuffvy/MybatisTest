@@ -1,0 +1,71 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>图书界面信息</title>
+  <style>
+    .book-container {
+      margin:5px;
+      border:1px solid #ccc;
+      float: left;
+      width: 200px;
+    }
+    .book-image {
+      width:100%;
+      height:50%;
+    }
+    .book-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .book-bookname {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .book-author {
+      font-size: 16px;
+      color: gray;
+    }
+    .book-publish {
+      font-size: 18px;
+      color: gray;
+    }
+    .book-date {
+      font-size: 14px;
+      color: gray;
+    }
+    .book-amount {
+      font-size: 14px;
+      color: gray;
+    }
+    input[type="submit"] {
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077c9;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h1>Book List</h1>
+<form action="/lib/list/" method="post">
+  <p><input type="submit" value="返回"></p>
+</form>
+<div th:each="book : ${books}">
+  <div class="book-container">
+    <img class="book-image" th:src="${book.picture}" alt="Book Image">
+    <div class="book-info">
+      <p class="book-id" th:text="${book.bookid}"></p>
+      <p class="book-bookname" th:text="${book.bookname}"></p>
+      <p class="book-author" th:text="${book.author}"></p>
+      <p class="book-date" th:text="${book.date}"></p>
+      <p class="book-publish" th:text="${book.publish}"></p>
+      <p class="book-amount" th:text="${book.amount}"></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

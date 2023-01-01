@@ -1,0 +1,80 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>图书界面信息</title>
+  <style>
+    .book-container {
+      margin:5px;
+      border:1px solid #ccc;
+      float: left;
+      width: 200px;
+    }
+    .book-image {
+      width:100%;
+      height:50%;
+    }
+    .book-info {
+      padding: 15px;
+      text-align: center;
+    }
+    .book-bookname {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .book-author {
+      font-size: 16px;
+      color: gray;
+    }
+    .book-publish {
+      font-size: 18px;
+      color: gray;
+    }
+    .book-date {
+      font-size: 14px;
+      color: gray;
+    }
+    .book-amount {
+      font-size: 14px;
+      color: gray;
+    }
+    input[type="submit"] {
+      width: 100px;
+      height: 40px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0077c9;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h1>Book List</h1>
+<div th:if="${per == 1}" class="button-container">
+  <button onclick="window.location.href='/lib/list/getseek'" class="edit-button">查找图书</button>
+  <button onclick="window.location.href='/lib/list/getadd'" class="edit-button">增加图书</button>
+  <button onclick="window.location.href='/lib/list/getupd'" class="edit-button">修改图书</button>
+  <button onclick="window.location.href='/lib/list/getdel'" class="edit-button">删除图书</button>
+</div>
+<div th:if="${per == 0}" class="button-container">
+  <button onclick="window.location.href='http://localhost:63342/MybatisTest/web/WEB-INF/templates/add.html'" class="edit-button">查找图书</button>
+</div>
+<form action="/lib/logout/" method="post">
+  <p><input type="submit" value="退出"></p>
+</form>
+<div th:each="book : ${books}">
+  <div class="book-container">
+    <img class="book-image" th:src="${book.picture}" alt="Book Image">
+    <div class="book-info">
+      <p class="book-id" th:text="${book.bookid}"></p>
+      <p class="book-bookname" th:text="${book.bookname}"></p>
+      <p class="book-author" th:text="${book.author}"></p>
+      <p class="book-date" th:text="${book.date}"></p>
+      <p class="book-publish" th:text="${book.publish}"></p>
+      <p class="book-amount" th:text="${book.amount}"></p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
