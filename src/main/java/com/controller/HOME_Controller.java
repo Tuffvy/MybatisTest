@@ -16,6 +16,7 @@ import com.tjise.mapper.UserMapper;
 import com.tjise.util.MyBatisUtil;
 import org.apache.ibatis.session.SqlSession;
 import com.tjise.entity.Book;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -108,8 +109,7 @@ public class HOME_Controller {
     public String Add(@RequestParam("bookname") String name,
                       @RequestParam("author") String author,
                       @RequestParam("publish") String publish,
-                      @RequestParam("date") String date, @RequestParam("amount") int amount,
-                      @RequestParam("picture") String picture)
+                      @RequestParam("date") String date, @RequestParam("amount") int amount)
     {
         Book new_book = new Book();
         new_book.setAmount(amount);
@@ -117,7 +117,7 @@ public class HOME_Controller {
         new_book.setBookname(name);
         new_book.setDate(date);
         new_book.setPublish(publish);
-        new_book.setPicture(picture);
+        new_book.setPicture("https://img12.360buyimg.com/n1/jfs/t1/69706/14/20858/498844/62f48b83E4f1cb479/439c82e68a58b694.png");
         bookMapper.insertBook(new_book);
         sqlsession.commit();
         return "redirect:/lib/list";
@@ -165,7 +165,7 @@ public class HOME_Controller {
         return "directory1";
     }
 
-    @RequestMapping(value = "/lib/logout", method = POST)
+    @RequestMapping(value = "/lib/logout")
     public String logout(HttpServletRequest request)
     {
         request.getSession().removeAttribute("UserName");

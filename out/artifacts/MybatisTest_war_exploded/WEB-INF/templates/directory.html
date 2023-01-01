@@ -47,6 +47,21 @@
       font-size: 16px;
       cursor: pointer;
     }
+    .edit-button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+    .button-container1 {
+      display: flex;
+      justify-content: space-between;
+    }
+    .button {
+      width: 45%;
+    }
   </style>
 </head>
 <body>
@@ -58,11 +73,17 @@
   <button onclick="window.location.href='/lib/list/getdel'" class="edit-button">删除图书</button>
 </div>
 <div th:if="${per == 0}" class="button-container">
-  <button onclick="window.location.href='http://localhost:63342/MybatisTest/web/WEB-INF/templates/add.html'" class="edit-button">查找图书</button>
+  <button onclick="window.location.href='/lib/list/getseek'" class="edit-button">查找图书</button>
 </div>
-<form action="/lib/logout/" method="post">
-  <p><input type="submit" value="退出"></p>
-</form>
+<div class="button-container1">
+  <form class="button" action="/lib/logout/" method="post">
+    <p><input type="submit" value="退出"></p>
+  </form>
+  <form class="button" action="/lib/list/usermsg" method="post">
+    <p><input type="submit" value="账号管理"></p>
+  </form>
+</div>
+
 <div th:each="book : ${books}">
   <div class="book-container">
     <img class="book-image" th:src="${book.picture}" alt="Book Image">

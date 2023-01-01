@@ -8,6 +8,10 @@
 <h1>修改图书</h1>
 <form action="/lib/list/upd/" method="post">
     <h2>请填入你要修改的相关信息:</h2><br>
+
+    <label for="id">书名:</label><br>
+    <input type="number" id="id" name="id"><br>
+
     <label for="bookname">书名:</label><br>
     <input type="text" id="bookname" name="bookname"><br>
 
@@ -17,8 +21,8 @@
     <label for="publish">出版社:</label><br>
     <input type="text" id="publish" name="publish"><br>
 
-    <label for="picture">照片路径:</label><br>
-    <input type="text" id="picture" name="picture"><br>
+    <label for="picture">照片:</label><br>
+    <input type="file" id="picture" name="picture"><br>
 
     <label for="date">出版日期:</label><br>
     <input type="date" id="date" name="date"><br>
