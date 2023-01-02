@@ -9,7 +9,6 @@ public interface UserMapper {
     User findUserById(int userid);
     User findUserByName(String username);
     List<User> findUserByPermission(int permission);
-    List<User> findUserByPage(Map<String, Object> map);
     int insertUser(User user);
     int updateUser(User user);
     int deleteUser(int userid);

@@ -16,9 +16,9 @@
             <!-- 配置DataSource标准数据源，目前由MyBatis管理 -->
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://localhost:3306/tuffv?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
-                <property name="username" value="root"/>
-                <property name="password" value="mt06171226"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/mysql_name?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>
+                <property name="username" value="username"/>
+                <property name="password" value="password"/>
             </dataSource>
 
         </environment>

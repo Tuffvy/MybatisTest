@@ -12,7 +12,6 @@ import com.tjise.mapper.UserMapper;
 import com.tjise.util.MyBatisUtil;
 import org.apache.ibatis.session.SqlSession;
 import com.tjise.entity.Book;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -110,8 +109,7 @@ public class HOME_Controller {
                       @RequestParam("author") String author,
                       @RequestParam("publish") String publish,
                       @RequestParam("date") String date,
-                      @RequestParam("amount") int amount,
-                      @RequestParam("picture") String picture)
+                      @RequestParam("amount") int amount)
     {
         Book new_book = new Book();
         new_book.setAmount(amount);
@@ -119,7 +117,6 @@ public class HOME_Controller {
         new_book.setBookname(name);
         new_book.setDate(date);
         new_book.setPublish(publish);
-        new_book.setPicture(picture);
         bookMapper.insertBook(new_book);
         sqlsession.commit();
         return "redirect:/lib/list";

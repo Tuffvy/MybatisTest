@@ -3,47 +3,33 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<!-- namespace属性相当于映射文件的名称 属性值任意-->
 <mapper namespace="com.tjise.mapper.UserMapper">
 
-    <!-- resultType属性指定结果的类型 -->
     <select id="findUserList" resultType="com.tjise.entity.User">
         select * from users
     </select>
-    <!-- ParameType属性指定输入参数的类型
-     如果参数类型是简单类型（基本 + String + date）#{xxx}里面的内容任意-->
+
     <select id="findUserById" resultType="com.tjise.entity.User" parameterType="int">
         select * from users where userid = #{userid}
     </select>
 
-    <!-- 用${value}作为 里面的内容必须是value 利用的是String的存储方式（value[]数组）-->
     <select id="findUserByName" resultType="com.tjise.entity.User" parameterType="string">
         select * from users where username like '%${value}%'
     </select>
 
-    <!-- 多条件查询利用map类型
-        默认的参数类型是map-->
     <select id="findUserByPermission" resultType="com.tjise.entity.User" parameterType="int">
         select * from users where permission = #{permission}
     </select>
 
-    <!-- pageSize 分页大小 currentPage当前页码 -->
-    <select id="findUserByPage" resultType="com.tjise.entity.User">
-        select * from users limit #{currentPage}, #{pageSize}
-    </select>
-
-    <!-- insert 插入数据 只有parameterType输入参数 -->
     <insert id="insertUser" parameterType="com.tjise.entity.User" useGeneratedKeys="true" keyProperty="userid">
         insert into users values(null, #{username}, #{password}, #{permission})
     </insert>
 
-    <!-- update 同样只有输入参数parameterType-->
     <update id="updateUser" parameterType="com.tjise.entity.User">
         update users set username = #{username}, password = #{password}, permission = #{permission}
         where userid = #{userid}
     </update>
 
-    <!-- delete 也是输入参数 -->
     <delete id="deleteUser" parameterType="int">
         delete from users where userid = #{userid}
     </delete>
