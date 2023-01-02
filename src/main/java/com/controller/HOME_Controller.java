@@ -223,5 +223,4 @@ public class HOME_Controller {
         sqlsession.commit();
         return "redirect:/lib/logout";
     }
-
 }
