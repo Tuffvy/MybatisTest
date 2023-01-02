@@ -9,23 +9,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="co-start 1.1.5">
+    <list default="true" id="82cc56e2-90d2-46e5-8880-755d6e23314a" name="Changes" comment="co-start 1.2">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/217939da-81a0-4c32-8b79-3382d80c6754.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/217939da-81a0-4c32-8b79-3382d80c6754.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/HOME_Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/classes/com/controller/HOME_Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/directory.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/upd.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/upd.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/repswd.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/MybatisTest_war_exploded/WEB-INF/templates/repswd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
-    </list>
-    <list id="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" name="Changes by 83808" comment="Changes by 83808">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" afterDir="false" />
-    </list>
-    <list id="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" name="Changes by junwei" comment="Changes by junwei">
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/repswd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/WEB-INF/templates/usermsg.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tjise/test/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tjise/test/MapperTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/add.html" afterDir="false" />
+    </list>
+    <list id="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" name="Changes by 83808" comment="Changes by 83808" />
+    <list id="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" name="Changes by junwei" comment="Changes by junwei">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/directory1.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/directory1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/repswd.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/repswd.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/WEB-INF/templates/upd.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/templates/upd.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,21 +52,18 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/src/main/java/com/controller/HOME_Controller.java">
       <ranges>
-        <range start1="3" end1="6" start2="3" end2="3" changelist="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" />
-        <range start1="8" end1="10" start2="5" end2="6" changelist="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" />
-        <range start1="18" end1="18" start2="14" end2="15" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
-        <range start1="26" end1="27" start2="23" end2="23" changelist="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" />
-        <range start1="110" end1="112" start2="106" end2="107" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
-        <range start1="119" end1="120" start2="114" end2="115" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
-        <range start1="167" end1="168" start2="162" end2="163" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
-        <range start1="176" end1="176" start2="171" end2="222" changelist="39eebbf9-f1cf-4715-bfe3-48e4aac14a8a" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/web/WEB-INF/templates/directory.html">
-      <ranges>
-        <range start1="49" end1="49" start2="49" end2="64" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
-        <range start1="60" end1="61" start2="75" end2="76" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
-        <range start1="62" end1="65" start2="77" end2="86" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="43" end1="44" start2="43" end2="44" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="55" end1="57" start2="55" end2="59" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="60" end1="62" start2="62" end2="64" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="74" end1="76" start2="76" end2="80" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="81" end1="81" start2="85" end2="86" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="82" end1="83" start2="87" end2="88" changelist="8bcf388f-07ed-4c85-b682-2c4bf92e1c21" />
+        <range start1="106" end1="107" start2="111" end2="114" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
+        <range start1="114" end1="115" start2="121" end2="122" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
+        <range start1="134" end1="135" start2="141" end2="142" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
+        <range start1="136" end1="139" start2="143" end2="146" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
+        <range start1="141" end1="147" start2="148" end2="153" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
+        <range start1="158" end1="158" start2="164" end2="167" changelist="82cc56e2-90d2-46e5-8880-755d6e23314a" />
       </ranges>
     </file>
   </component>
@@ -302,11 +302,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapperTest.testInsertUser" />
         <item itemvalue="JUnit.MapperTest.testInsertBook" />
         <item itemvalue="JUnit.MapperTest.testUpdateBook" />
         <item itemvalue="JUnit.MapperTest.testUpdate" />
         <item itemvalue="JUnit.MapperTest.testDeleteBook" />
-        <item itemvalue="JUnit.MapperTest.testInsertUser" />
       </list>
     </recent_temporary>
   </component>
@@ -322,7 +322,8 @@
       <workItem from="1672473035200" duration="27832000" />
       <workItem from="1672505325515" duration="420000" />
       <workItem from="1672551986395" duration="11461000" />
-      <workItem from="1672580465014" duration="7447000" />
+      <workItem from="1672580465014" duration="7712000" />
+      <workItem from="1672637450903" duration="5533000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1672391736006</created>
@@ -394,7 +395,35 @@
       <option name="project" value="LOCAL" />
       <updated>1672568484371</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="co-start 1.2">
+      <created>1672590994384</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672590994384</updated>
+    </task>
+    <task id="LOCAL-00012" summary="co-start 1.2">
+      <created>1672591001278</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672591001278</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Changes by junwei">
+      <created>1672591012150</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672591012150</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Changes by 83808">
+      <created>1672591020289</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672591020289</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,10 +472,11 @@
     <MESSAGE value="start" />
     <MESSAGE value="co-start" />
     <MESSAGE value="co-start 12.31" />
-    <MESSAGE value="Changes by 83808" />
     <MESSAGE value="co-start 1.1" />
-    <MESSAGE value="Changes by junwei" />
     <MESSAGE value="co-start 1.1.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="co-start 1.1.5" />
+    <MESSAGE value="co-start 1.2" />
+    <MESSAGE value="Changes by junwei" />
+    <MESSAGE value="Changes by 83808" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by 83808" />
   </component>
 </project>

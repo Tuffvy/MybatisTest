@@ -82,7 +82,7 @@ public class MapperTest {
     @Test
     public void testInsertUser(){
         try {
-            User user = new User("user2", "123456", 1);
+            User user = new User("user1", "123456", 0);
             userMapper.insertUser(user);
             session.commit();
         } catch (Exception e) {

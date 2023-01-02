@@ -104,7 +104,9 @@ public class HOME_Controller {
     public String Add(@RequestParam("bookname") String name,
                       @RequestParam("author") String author,
                       @RequestParam("publish") String publish,
-                      @RequestParam("date") String date, @RequestParam("amount") int amount)
+                      @RequestParam("date") String date,
+                      @RequestParam("amount") int amount,
+                      @RequestParam("picture") String picture)
     {
         Book new_book = new Book();
         new_book.setAmount(amount);
@@ -112,7 +114,7 @@ public class HOME_Controller {
         new_book.setBookname(name);
         new_book.setDate(date);
         new_book.setPublish(publish);
-        new_book.setPicture("https://img12.360buyimg.com/n1/jfs/t1/69706/14/20858/498844/62f48b83E4f1cb479/439c82e68a58b694.png");
+        new_book.setPicture(picture);
         bookMapper.insertBook(new_book);
         sqlsession.commit();
         return "redirect:/lib/list";
@@ -132,19 +134,18 @@ public class HOME_Controller {
     public String getUpd(){return "upd";}
     @RequestMapping(value = "/lib/list/upd", method = POST)
     public String update(@RequestParam("id") int id,
-                         @RequestParam("bookname") String name,
+                         @RequestParam("bookname") String bookname,
                          @RequestParam("author") String author,
-                         @RequestParam("publish") String pub,
-                         @RequestParam("date") String date, @RequestParam("amount") String am,
-                         @RequestParam("picture") String pic)
+                         @RequestParam("publish") String publish,
+                         @RequestParam("date") String date,
+                         @RequestParam("amount") String amount)
     {
         Book up_book = bookMapper.findBookById(id);
-        if(name != null) up_book.setBookname(name);
-        if(author != null) up_book.setAuthor(author);
-        if (pub != null) up_book.setPublish(pub);
-        if(date != null) up_book.setDate(date);
-        if(am != null) up_book.setAmount(Integer.valueOf(am));
-        if(pic != null) up_book.setPublish(pic);
+        if(!bookname.equals("")) up_book.setBookname(bookname);
+        if(!author.equals("")) up_book.setAuthor(author);
+        if (!publish.equals("")) up_book.setPublish(publish);
+        if(!date.equals("")) up_book.setDate(date);
+        if(!amount.equals("")) up_book.setAmount(Integer.valueOf(amount));
         bookMapper.updateBook(up_book);
         sqlsession.commit();
         return "redirect:/lib/list";
@@ -156,6 +157,9 @@ public class HOME_Controller {
     public String Seek_byName(HttpServletRequest request, @RequestParam("bookname") String name, Model model)
     {
         List<Book> cur_book = bookMapper.findBookByName(name);
+        if(cur_book.isEmpty()){
+            model.addAttribute("msg","未查询到相关书籍");
+        }
         model.addAttribute("books", cur_book);
         return "directory1";
     }

@@ -19,8 +19,9 @@
     margin-bottom: 10px;
   }
 </style>
-<h1 th:text="${msg}"></h1>
+
 <h1>修改密码</h1>
+<div th:if="${msg}" th:text="${msg}"></div>
 <form action="http://localhost:8080/lib/list/usermsg/repswd" method="post">
   <p>旧密码: <input type="password" name="old_password"></p>
   <p>新密码: <input type="password" name="new_password"></p>
