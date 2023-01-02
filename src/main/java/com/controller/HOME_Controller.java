@@ -32,10 +32,7 @@ public class HOME_Controller {
     @RequestMapping(value = "/lib")
     public String login(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
-        if (session.getAttribute("UserName") == null)
-            return "login";
-        else
-            return "redirect:/lib/list";
+        return "login";
     }
 
     @RequestMapping(value = "/lib/login", method = POST)
