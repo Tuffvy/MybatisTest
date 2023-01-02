@@ -30,7 +30,7 @@ public class HOME_Controller {
     BookMapper bookMapper = sqlsession.getMapper(BookMapper.class);
 
     @RequestMapping(value = "/lib")
-    public String login(HttpServletRequest request, HttpServletResponse response) {
+    public String Getlogin(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
         return "login";
     }
