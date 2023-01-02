@@ -7,7 +7,7 @@
       margin:5px;
       border:1px solid #ccc;
       float: left;
-      width: 200px;
+      width: 280px;
     }
     .book-image {
       width:100%;
@@ -66,6 +66,7 @@
 </head>
 <body>
 <h1>Book List</h1>
+<div th:if="${msg}" th:text="${msg}"></div>
 <div th:if="${per == 1}" class="button-container">
   <button onclick="window.location.href='/lib/list/getseek'" class="edit-button">查找图书</button>
   <button onclick="window.location.href='/lib/list/getadd'" class="edit-button">增加图书</button>

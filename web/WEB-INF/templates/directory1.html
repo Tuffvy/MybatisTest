@@ -51,6 +51,7 @@
 </head>
 <body>
 <h1>Book List</h1>
+<div th:if="${msg}" th:text="${msg}"></div>
 <form action="/lib/list/" method="post">
   <p><input type="submit" value="返回"></p>
 </form>

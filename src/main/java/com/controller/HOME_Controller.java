@@ -41,7 +41,7 @@ public class HOME_Controller {
 
     @RequestMapping(value = "/lib/login", method = POST)
     public String login(@RequestParam("username") String username,
-             @RequestParam("password") String in_password,HttpServletRequest request)
+             @RequestParam("password") String in_password,Model model,HttpServletRequest request)
     {
         User user =  userMapper.findUserByName(username);
         if(user != null)
@@ -53,13 +53,15 @@ public class HOME_Controller {
                 session.setAttribute("UserName", username);
                 session.setAttribute("per", per);
                 return "redirect:/lib/list";
-            } else
-                return "redirect:/lib";
+            } else {
+                model.addAttribute("msg", "上次登录密码错误！");
+                return "login";
+            }
         }
         else //用户不存在
         {
-            /*提示用户不存在*/
-            return "redirect:/lib";
+            model.addAttribute("msg", "上次登录用户名不存在！");
+            return "login";
         }
 
     }
@@ -72,15 +74,18 @@ public class HOME_Controller {
                         HttpServletResponse response) throws ServletException, IOException
     {
         User user = userMapper.findUserByName(username);
-        if(user != null)
-            model.addAttribute("msg","用户名已存在！");
+        if(user != null) {
+            model.addAttribute("msg", "用户名已存在！");
+            return "login";
+        }
         else
         {
             User new_user = new User(username, password, 0);
             userMapper.insertUser(new_user);
             sqlsession.commit();
+            return "redirect:/lib";
         }
-        return "redirect:/lib";
+
     }
 
     @RequestMapping(value = "/lib/list")
